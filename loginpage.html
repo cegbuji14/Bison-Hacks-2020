@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="loginpage.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div> <h1><center>welcome to volo </center></div>
+
+<div id="test">
+  <div id="createAccount">
+    <input id="create" type="submit" name="button" value="enter"/>
+  </div>
+<form action id="searchform" action="javascript:scan()">
+  <label for="usernam">Username:</label><br>
+  
+  <input type="text" id="usernam" name="usernam"><br>
+  <label for="paswd">Password:</label><br>
+  
+  <input type="text" id="paswd" name="paswd">
+  <input type="submit" id = "submit" value="Submit">
+</form>
+</div>
+<!--homepage website-->
+<div id="test2" style="display:none;">
+  Hello world!
+</div>
+<div id="create account" style="display:none;">
+  Hello world!
+</div>
+
+<script language="javascript">
+    var items = [
+  ["luzz", "Luz West", "Juris Doctor degree", "Will", "(921) 960-5000"],
+   ["harryO", "Hary Oliver", "Juris Doctor Degree", "Divorce", "(683) 701-9327"],
+   ["JOzz21", "Julia Osborne", "Master of Laws degree", "Employment", "(886) 411-7142"],
+    ["FG89", "Frederick Gross", "Doctor of Judicial Science Degree", "Child Custody", "(801) 269-7521"],
+	["RPayne8", "Rodolfo Payne", "Master of Legal Studies degree", "Criminal", "(635) 726-0394"],
+	["Terracemo", "Terrence Moore", "", "Estate", "(220) 963-0202"],
+];
+    if(document.getElementById())
+      if(document.getElementById('create').clicked == true) {
+        var a = document.getElementById("test");
+        var b = document.getElementById("create account");
+        console.log(a.style);
+        if (a.style.display === "none") {
+          a.style.display = "block";
+        } else {
+          a.style.display = "none";
+          b.style.display = "block";
+        }
+      }
+	$("#submit").click(function(e){
+	  e.preventDefault();
+	  console.log(e);
+	  //code for if they clicked the create account button
+
+
+		//alert($("#usernam").val());
+		var i;
+		var flag = false;
+
+		for (i = 0; i < items.length; i++){
+			console.log("Hi");
+		    var usernam = $("#usernam").val();
+			if (items[i][0] === (usernam)){
+			  flag = true;
+			//if (items[i][0].isz($("#usernam").val())
+				  var x = document.getElementById("test");
+                  var y = document.getElementById("test2");
+				  console.log(x.style);
+					if (x.style.display === "none") {
+						x.style.display = "block";
+					}
+					else {
+                      x.style.display = "none";
+                      y.style.display = "block";
+                    }
+				//alert($("#usernam").val());
+				//alert("ok");
+			}
+		}
+
+	});
+	/*
+	alert($("#usernam").val());
+	var i;
+	for (i = 0; i < items.length; i++){
+	    if (items[i] == ($("#usernam"))){
+		window.location.replace("http://stackoverflow.com");
+		alert($("#usernam").val());
+		}}}
+		*/
+		
+		   // window.location.href="homepage.html"; // Put url to redirect
+
+  
+</script>
+</body>
+</html>
