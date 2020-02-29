@@ -3,7 +3,7 @@
 #include <vector>
 
 using namespace std;
- 
+
 class Volo{
   
   private:
@@ -30,7 +30,7 @@ class Volo{
       attorney_list[2] = {"Julia Osborne", "Master of Laws degree", "Employment", "(886) 411-7142"};
       attorney_list[3] = {"Frederick Gross", "Doctor of Judicial Science degree", "Child Custody", "(801) 269-7521"};
       attorney_list[4] = {"Rodolfo Payne", "Master of Legal Studies degree", "Criminal", "(635) 726-0394"};
-      attorney_list[5] = {"Terrence	Moore", " ", "Estate", "(220) 963-0202"};
+      attorney_list[5] = {"Terrence Moore", "Master of Dispute Resolution degree", "Estate", "(220) 963-0202"};
       attorney_list[6] = {"Pete	Morris", "Master of Laws degree", "Land lord/Tenant", "(429) 208-2268"};
       attorney_list[7] = {"Jeffrey Rios", "Doctor of Judicial Science degree", "Intellectual Property", "(214) 718-0226"};
       attorney_list[8] = {"Eric Schneider", "Master of Dispute Resolution degree", "Legal Terms", "(944) 800-2062"};
